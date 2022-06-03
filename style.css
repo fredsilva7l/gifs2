@@ -1,0 +1,26 @@
+.container{
+    background-color: #000;
+}
+.titulo-principal{
+    max-width: 480px;
+    text-align: center;
+    margin: 60px auto;
+    font-family:'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+.titulo-principal2{
+    max-width: 480px;
+    text-align: center;
+    margin: 60px auto;
+    font-family:'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+.none {
+    display: none;
+}
+
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
