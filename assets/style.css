@@ -119,7 +119,7 @@
 
 
 .nome::before {
-    content: 'Daiani';
+    content: 'Fred';
     position: absolute;
     z-index: 9;
     width: 100%;
