@@ -66,19 +66,19 @@
 
 
 
-.heart {
+.halfHeart {
     z-index: 8;
 }
 
-.echo {
+.halfEcho {
     z-index: 7;
 }
 
 
-.heart::before,
-.heart::after,
-.echo::before,
-.echo::after {
+.halfHeart::before,
+.halfHeart::after,
+.halfEcho::before,
+.halfEcho::after {
     content: '';
     position: absolute;
     top: 40px;
@@ -92,13 +92,13 @@
     transform-origin: 0 100%;
 }
 
-.heart::before,
-.echo::before {
+.fullHeart::before,
+.fullEcho::before {
     left: 150px;
 }
 
-.heart::after,
-.echo::after {
+.fullHeart::after,
+.fullEcho::after {
     left: 0;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -106,17 +106,19 @@
     transform-origin: 100% 100%;
 }
 
-.heart::after {
+.shadowHeart::after {
     box-shadow:
         inset -6px -6px 0px 6px rgba(255, 255, 255, 0.1);
 }
 
-.heart::before {
+.fullShadowHeart::before {
     box-shadow:
         inset 6px 6px 0px 6px rgba(255, 255, 255, 0.1);
 }
 
-#name::before {
+
+
+.nome::before {
     content: 'Daiani';
     position: absolute;
     z-index: 9;
@@ -208,8 +210,8 @@
     animation-name: echo;
 }
 
-.heart,
-.echo {
+.beatHeart,
+.beatEcho {
     -webkit-animation-play-state: running;
     animation-play-state: running;
 }

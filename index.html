@@ -10,9 +10,9 @@
  <script defer src="script.js"></script>
 </head>
 
-<body class="corpo">
+<body>
 
- <pre class="maquinaEscrever campoEscrita responsivoQuadro">
+    <pre class="maquinaEscrever">
 /*
 * Olá, tudo bom?
 * Hoje é dia de colocar em prática meus estudos
@@ -55,7 +55,7 @@ box-shadow: 0px 4px 0px 2px rgba(0, 0, 0, 0.1);
 */
 
 @media screen and (max-width: 768px) {
-.campoEscrita {
+.responsivoQuadro {
 left: 6%;
 right: 6%;
 top: 50%;
@@ -63,7 +63,7 @@ top: 50%;
 }
 
 @media screen and (min-width: 768px) {
-.campoEscrita {
+.responsivoQuadro {
 width: 48%;
 left: 50%;
 bottom: 30px;
@@ -72,8 +72,7 @@ bottom: 30px;
 
 @media screen and (max-width: 768px) {
 
-.heart,
-.echo {
+.responsivoCoracao {
 position: fixed;
 width: 300px;
 height: 300px;
@@ -88,8 +87,7 @@ transform: scale(0.95);
 
 @media screen and (min-width: 768px) {
 
-.heart,
-.echo {
+.responsivoCoracao {
 position: fixed;
 width: 300px;
 height: 300px;
@@ -117,10 +115,10 @@ z-index: 7;
 }
 
 
-.heart::before,
-.heart::after,
-.echo::before,
-.echo::after {
+.halfHeart::before,
+.halfHeart::after,
+.halfEcho::before,
+.halfEcho::after {
 content: '';
 position: absolute;
 top: 40px;
@@ -134,15 +132,13 @@ transform: rotate(-45deg);
 transform-origin: 0 100%;
 }
 
-// parte um do desenho
-
-.heart::before,
-.echo::before {
+.fullHeart::before,
+.fullEcho::before {
 left: 150px;
 }
 
-.heart::after,
-.echo::after {
+.fullHeart::after,
+.fullEcho::after {
 left: 0;
 -webkit-transform: rotate(45deg);
 transform: rotate(45deg);
@@ -156,14 +152,12 @@ transform-origin: 100% 100%;
 * Vai ficar bem melhor!
 */
 
-.heart::after {
+.shadowHeart::after {
 box-shadow:
 inset -6px -6px 0px 6px rgba(255, 255, 255, 0.1);
 }
 
-//parte três
-
-.heart::before {
+.fullShadowHeart::before {
 box-shadow:
 inset 6px 6px 0px 6px rgba(255, 255, 255, 0.1);
 }
@@ -174,7 +168,7 @@ inset 6px 6px 0px 6px rgba(255, 255, 255, 0.1);
 * O que podemos fazer para mudar isso?
 */
 
-.heart i::before {
+.nome::before {
 content: 'Daiani';
 position: absolute;
 z-index: 9;
@@ -290,9 +284,9 @@ animation-play-state: running;
 * Feliz dia dos namorados
 * Te adoro mb 💕
 */
-</pre>
- <div class="responsivoCoracao heart"><i id="name"></i></div>
- <div class="responsivoCoracao echo"></div>
+    </pre>
+    <div class="heart"><i class="nameMarcador"></i></div>
+    <div class="echo"></div>
 
 </body>
 
