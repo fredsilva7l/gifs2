@@ -1,0 +1,293 @@
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Efeito Máquina de Escrever</title>
+ <link rel="stylesheet" href="reset.css">
+ <link rel="stylesheet" href="maquina.css">
+ <link rel="stylesheet" href="style.css">
+ <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <pre class="maquinaEscrever">
+/*
+* Olá, tudo bom?
+* Hoje é dia de colocar em prática meus estudos
+* Me inspirei no dia dos namorados
+* Estou criando uma página web com o coração
+* A seguir detalharei o que está por vir
+* Então vamos começar?
+* Primeiro vamos tirar esse branco horrivel
+*/
+
+body {
+background-color: #1a1c24;
+color: #fff;
+}
+
+/*
+* Pronto, bem melhor!
+* Agora eu preciso de uma página para escrever!
+*/
+
+.campoEscrita {
+position: fixed;
+top: 30px;
+bottom: 30px;
+transition: left 500ms;
+overflow: auto;
+background-color: #313744;
+color: #a6c3d4;
+border: 1px solid rgba(0, 0, 0, 0.2);
+padding: 24px 12px;
+box-sizing: border-box;
+border-radius: 3px;
+box-shadow: 0px 4px 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+/*
+* Está estranho... o site precisa ser responsivo
+* Você quer ver ele em vários dispositivos, correto?!
+* Vou acertar as dimensões
+*/
+
+@media screen and (max-width: 768px) {
+.responsivoQuadro {
+left: 6%;
+right: 6%;
+top: 50%;
+}
+}
+
+@media screen and (min-width: 768px) {
+.responsivoQuadro {
+width: 48%;
+left: 50%;
+bottom: 30px;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+.responsivoCoracao {
+position: fixed;
+width: 300px;
+height: 300px;
+margin: 30px auto;
+left: 0;
+right: 0;
+text-align: center;
+-webkit-transform: scale(0.95);
+transform: scale(0.95);
+}
+}
+
+@media screen and (min-width: 768px) {
+
+.responsivoCoracao {
+position: fixed;
+width: 300px;
+height: 300px;
+top: calc(50% - 150px);
+left: calc(25% - 150px);
+text-align: center;
+-webkit-transform: scale(0.95);
+transform: scale(0.95);
+}
+}
+
+/*
+* Agora você já pode visitar o site sempre ^^
+* Está na hora de usar a criatividade...
+* Eu não sou bom nisso mas irei tentar
+* Vamos começar com um desenho
+*/
+
+.heart {
+z-index: 8;
+}
+
+.echo {
+z-index: 7;
+}
+
+
+.halfHeart::before,
+.halfHeart::after,
+.halfEcho::before,
+.halfEcho::after {
+content: '';
+position: absolute;
+top: 40px;
+width: 150px;
+height: 240px;
+background: #c66c75;
+border-radius: 150px 150px 0 0;
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+-webkit-transform-origin: 0 100%;
+transform-origin: 0 100%;
+}
+
+.fullHeart::before,
+.fullEcho::before {
+left: 150px;
+}
+
+.fullHeart::after,
+.fullEcho::after {
+left: 0;
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+-webkit-transform-origin: 100% 100%;
+transform-origin: 100% 100%;
+}
+
+/*
+* Pronto, está começando a ficar bom
+* Vamos adicionar algumas sombras agora
+* Vai ficar bem melhor!
+*/
+
+.shadowHeart::after {
+box-shadow:
+inset -6px -6px 0px 6px rgba(255, 255, 255, 0.1);
+}
+
+.fullShadowHeart::before {
+box-shadow:
+inset 6px 6px 0px 6px rgba(255, 255, 255, 0.1);
+}
+
+/*
+* O coração está pronto, mas falta algo
+* Ele ainda não parece ser seu...
+* O que podemos fazer para mudar isso?
+*/
+
+.nome::before {
+content: 'Daiani';
+position: absolute;
+z-index: 9;
+width: 100%;
+top: 35%;
+left: 0;
+font-style: normal;
+color: rgba(255, 255, 255, 0.8);
+font-weight: 100;
+font-size: 30px;
+text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*
+* Agora sim, ele é todo seu
+* Mas ainda falta algo...
+* Não é assim que eu fico quando te vejo
+* Então está na hora de acelerar as coisas
+*/
+
+@-webkit-keyframes heartbeat {
+
+0%,
+100% {
+-webkit-transform: scale(0.95);
+transform: scale(0.95);
+}
+
+50% {
+-webkit-transform: scale(1.00);
+transform: scale(1.00);
+}
+}
+
+@keyframes heartbeat {
+
+0%,
+100% {
+transform: scale(0.95);
+}
+
+50% {
+transform: scale(1.00);
+}
+}
+
+@-webkit-keyframes echo {
+0% {
+opacity: 0.1;
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+
+100% {
+opacity: 0;
+-webkit-transform: scale(1.4);
+transform: scale(1.4);
+}
+}
+
+@keyframes echo {
+0% {
+opacity: 0.1;
+transform: scale(1);
+}
+
+100% {
+opacity: 0;
+transform: scale(1.4);
+}
+}
+
+//Está quase pronto
+
+.heart,
+.echo {
+-webkit-animation-duration: 2000ms;
+animation-duration: 2000ms;
+-webkit-animation-timing-function:
+cubic-bezier(0, 0, 0, 1.74);
+animation-timing-function:
+cubic-bezier(0, 0, 0, 1.74);
+-webkit-animation-delay: 500ms;
+animation-delay: 500ms;
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+-webkit-animation-play-state: paused;
+animation-play-state: paused;
+}
+
+.heart {
+-webkit-animation-name: heartbeat;
+animation-name: heartbeat;
+}
+
+//Espera mais um pouquinho
+
+.echo {
+-webkit-animation-name: echo;
+animation-name: echo;
+}
+
+//Aqui vamos nós!!!
+
+.heart,
+.echo {
+-webkit-animation-play-state: running;
+animation-play-state: running;
+}
+
+/*
+* Agora está bem melhor
+* Feliz dia dos namorados
+* Te adoro mb 💕
+*/
+    </pre>
+    <div class="heart"><i class="nameMarcador"></i></div>
+    <div class="echo"></div>
+
+</body>
+
+</html>
