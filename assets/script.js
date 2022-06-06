@@ -1,4 +1,4 @@
-console.log("00:16");
+console.log("00:30");
 
 function typeWrite(elemento) {
   const textoArray = elemento.innerHTML.split('');
@@ -66,7 +66,13 @@ setTimeout(function () {
 }, 198800); //3976 246660
 
 $().ready(function () {
-  $(".corpo").animate({
+  $("body").animate({
+    scrollTop: 10000
+  }, 70350);
+});
+
+$().ready(function () {
+  $(".scroll").animate({
     scrollTop: 10000
   }, 202250);
 });
