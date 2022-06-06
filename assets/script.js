@@ -68,4 +68,101 @@ setTimeout(function() {
   eco.classList.add("beatEcho");
 }, 198800);//3976 246660
 
+$().ready(function(){
+  $(".corpo").animate({ scrollTop: 1000}, 5000);
+  $(".corpo").animate({ scrollTop: 1000}, 10000);
+  $(".corpo").animate({ scrollTop: 1000}, 15000);
+  $(".corpo").animate({ scrollTop: 1000}, 20000);
+  $(".corpo").animate({ scrollTop: 1000}, 25000);
+  $(".corpo").animate({ scrollTop: 1000}, 30000);
+  $(".corpo").animate({ scrollTop: 1000}, 35000);
+  $(".corpo").animate({ scrollTop: 1000}, 40000);
+  $(".corpo").animate({ scrollTop: 1000}, 45000);
+  $(".corpo").animate({ scrollTop: 1000}, 50000);
+  $(".corpo").animate({ scrollTop: 1000}, 55000);
+
+  $(".corpo").animate({ scrollTop: 1000}, 60000);
+  $(".corpo").animate({ scrollTop: 1000}, 65000);
+  $(".corpo").animate({ scrollTop: 1000}, 70000);
+  $(".corpo").animate({ scrollTop: 1000}, 75000);
+  $(".corpo").animate({ scrollTop: 1000}, 80000);
+  $(".corpo").animate({ scrollTop: 1000}, 85000);
+  $(".corpo").animate({ scrollTop: 1000}, 90000);
+  $(".corpo").animate({ scrollTop: 1000}, 95000);
+  $(".corpo").animate({ scrollTop: 1000}, 100000);
+  $(".corpo").animate({ scrollTop: 1000}, 105000);
+  $(".corpo").animate({ scrollTop: 1000}, 110000);
+
+  $(".corpo").animate({ scrollTop: 1000}, 115000);
+  $(".corpo").animate({ scrollTop: 1000}, 120000);
+  $(".corpo").animate({ scrollTop: 1000}, 125000);
+  $(".corpo").animate({ scrollTop: 1000}, 130000);
+  $(".corpo").animate({ scrollTop: 1000}, 135000);
+  $(".corpo").animate({ scrollTop: 1000}, 14000);
+  $(".corpo").animate({ scrollTop: 1000}, 145000);
+  $(".corpo").animate({ scrollTop: 1000}, 150000);
+  $(".corpo").animate({ scrollTop: 1000}, 155000);
+  $(".corpo").animate({ scrollTop: 1000}, 160000);
+  $(".corpo").animate({ scrollTop: 1000}, 165000);
+
+  $(".corpo").animate({ scrollTop: 1000}, 170000);
+  $(".corpo").animate({ scrollTop: 1000}, 175000);
+  $(".corpo").animate({ scrollTop: 1000}, 180000);
+  $(".corpo").animate({ scrollTop: 1000}, 185000);
+  $(".corpo").animate({ scrollTop: 1000}, 190000);
+  $(".corpo").animate({ scrollTop: 1000}, 195000);
+  $(".corpo").animate({ scrollTop: 1000}, 200000);
+  $(".corpo").animate({ scrollTop: 1000}, 205000);
+  $(".corpo").animate({ scrollTop: 1000}, 210000);
+  $(".corpo").animate({ scrollTop: 1000}, 220000);
+  $(".corpo").animate({ scrollTop: 1000}, 225000);
+
+  $(".corpo").animate({ scrollTop: 1000}, 5000);
+  $(".corpo").animate({ scrollTop: 1000}, 10000);
+  $(".corpo").animate({ scrollTop: 1000}, 15000);
+  $(".corpo").animate({ scrollTop: 1000}, 20000);
+  $(".corpo").animate({ scrollTop: 1000}, 25000);
+  $(".corpo").animate({ scrollTop: 1000}, 30000);
+  $(".corpo").animate({ scrollTop: 1000}, 35000);
+  $(".corpo").animate({ scrollTop: 1000}, 40000);
+  $(".corpo").animate({ scrollTop: 1000}, 45000);
+  $(".corpo").animate({ scrollTop: 1000}, 50000);
+  $(".corpo").animate({ scrollTop: 1000}, 55000);
+
+  $(".corpo").animate({ scrollTop: 1000}, 5000);
+  $(".corpo").animate({ scrollTop: 1000}, 10000);
+  $(".corpo").animate({ scrollTop: 1000}, 15000);
+  $(".corpo").animate({ scrollTop: 1000}, 20000);
+  $(".corpo").animate({ scrollTop: 1000}, 25000);
+  $(".corpo").animate({ scrollTop: 1000}, 30000);
+  $(".corpo").animate({ scrollTop: 1000}, 35000);
+  $(".corpo").animate({ scrollTop: 1000}, 40000);
+  $(".corpo").animate({ scrollTop: 1000}, 45000);
+  $(".corpo").animate({ scrollTop: 1000}, 50000);
+  $(".corpo").animate({ scrollTop: 1000}, 55000);
+
+  $(".corpo").animate({ scrollTop: 1000}, 5000);
+  $(".corpo").animate({ scrollTop: 1000}, 10000);
+  $(".corpo").animate({ scrollTop: 1000}, 15000);
+  $(".corpo").animate({ scrollTop: 1000}, 20000);
+  $(".corpo").animate({ scrollTop: 1000}, 25000);
+  $(".corpo").animate({ scrollTop: 1000}, 30000);
+  $(".corpo").animate({ scrollTop: 1000}, 35000);
+  $(".corpo").animate({ scrollTop: 1000}, 40000);
+  $(".corpo").animate({ scrollTop: 1000}, 45000);
+  $(".corpo").animate({ scrollTop: 1000}, 50000);
+  $(".corpo").animate({ scrollTop: 1000}, 55000);
+
+  $(".corpo").animate({ scrollTop: 1000}, 5000);
+  $(".corpo").animate({ scrollTop: 1000}, 10000);
+  $(".corpo").animate({ scrollTop: 1000}, 15000);
+  $(".corpo").animate({ scrollTop: 1000}, 20000);
+  $(".corpo").animate({ scrollTop: 1000}, 25000);
+  $(".corpo").animate({ scrollTop: 1000}, 30000);
+  $(".corpo").animate({ scrollTop: 1000}, 35000);
+  $(".corpo").animate({ scrollTop: 1000}, 40000);
+  $(".corpo").animate({ scrollTop: 1000}, 45000);
+  $(".corpo").animate({ scrollTop: 1000}, 50000);
+  $(".corpo").animate({ scrollTop: 1000}, 55000);
+  });
 
