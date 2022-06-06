@@ -1,7 +1,7 @@
 
 var texto = document.querySelector(".maquinaEscrever");
 var rascunho = texto.textContent;
-console.log(rascunho.length);
+console.log("23:14");
 
 function typeWrite(elemento){
     const textoArray = elemento.innerHTML.split('');
