@@ -1,7 +1,7 @@
 const texto = document.querySelector("pre");
 const rascunho =  texto.textContent;
 
-console.log("15:53")
+console.log("16:08")
 
 function typeWrite(elemento){
     const textoArray = elemento.innerHTML.split('');
@@ -63,17 +63,5 @@ setTimeout(function() {
   coração.classList.add("beatHeart");
   eco.classList.add("beatEcho");
 }, 51150);//3976 246660
-
-$().ready(function () {
-  $("body").animate({
-    scrollTop: 100000
-  }, 24850);
-});
-
-$().ready(function () {
-  $(".scroll").animate({
-    scrollTop: 100000
-  }, 55200);
-});
 
 
