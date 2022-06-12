@@ -1,7 +1,7 @@
 const texto = document.querySelector("pre");
 const rascunho =  texto.textContent;
 
-console.log("15:34")
+console.log("15:53")
 
 function typeWrite(elemento){
     const textoArray = elemento.innerHTML.split('');
@@ -65,15 +65,15 @@ setTimeout(function() {
 }, 51150);//3976 246660
 
 $().ready(function () {
-  $(".scroll").animate({
-    scrollTop: 10000
-  }, 55200);
+  $("body").animate({
+    scrollTop: 100000
+  }, 24850);
 });
 
 $().ready(function () {
-  $("body").animate({
-    scrollTop: 10000
-  }, 24850);
+  $(".scroll").animate({
+    scrollTop: 100000
+  }, 55200);
 });
 
 
