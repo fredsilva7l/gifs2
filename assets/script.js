@@ -1,7 +1,7 @@
 const texto = document.querySelector("pre");
 const rascunho =  texto.textContent;
 
-console.log(rascunho.length)
+console.log("15:34")
 
 function typeWrite(elemento){
     const textoArray = elemento.innerHTML.split('');
